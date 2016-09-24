@@ -46,8 +46,6 @@ AppAsset::register($this);
                     'options' => ['class' => 'navbar-nav navbar-right'],
                     'items' => [
                         ['label' => 'Home', 'url' => ['/site/index'], 'options' => ['class' => [Yii::$app->controller->id == "site" && $this->context->action->id == "index" ? 'active' : '']]],
-//                        ['label' => 'About', 'url' => ['/site/about'], 'options' => ['class' => [$this->context->action->id == "about" ? 'active' : '']]],
-//                        ['label' => 'User', 'url' => ['/user'], 'options' => ['class' => [Yii::$app->controller->id == "default" && $this->context->action->id == "index" ? 'active' : '']]],
                         ['label' => 'Register', 'url' => ['/user/register'], 'options' => ['class' => [$this->context->action->id == "register" ? 'active' : '']]],
                         ['label' => 'Login', 'url' => ['/user/login'], 'options' => ['class' => [$this->context->action->id == "login" ? 'active' : '']]]
                     ],
@@ -94,12 +92,6 @@ AppAsset::register($this);
             <?php NavBar::end(); ?>
 
             <div class="container">
-                <?php
-//                Breadcrumbs::widget([
-//                    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-//                ])
-
-                ?>
                 <?= $content ?>
             </div>
         </div>

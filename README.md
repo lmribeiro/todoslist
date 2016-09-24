@@ -8,6 +8,8 @@ DEMO
 ----
 
 You can check the demo at [todoslist.tk](http://www.todoslist.tk/), but please have the notion that you can be a little slow.
+- User: todo@list.com
+- Pass: todoslist
 
 
 DIRECTORY STRUCTURE

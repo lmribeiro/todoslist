@@ -114,6 +114,12 @@ You can then access the application through the following URL:
 http://localhost/todoslist/web/
 ~~~
 
+### Notes
+
+You must set special permission to this folders:
+- "runtime": "0777",
+- "web/assets": "0777",
+
 
 LICENSE
 -------------

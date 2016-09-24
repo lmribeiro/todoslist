@@ -24,7 +24,7 @@ DIRECTORY STRUCTURE
 REQUIREMENTS
 ------------
 
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
+The minimum requirement by this project is that your Web server supports PHP 5.4.0.
 
 
 INSTALLATION
@@ -51,14 +51,12 @@ $ php composer.phar install
 ```
 
 
-
-
 CONFIGURATION
 -------------
 
 ### Database
 
-Edit the file `config/db.php` with real data, for example:
+First you must create the database manually, then ddit the file `config/db.php` with real data, for example:
 
 ```php
 return [
@@ -117,6 +115,6 @@ http://localhost/todoslist/web/
 ~~~
 
 
-**NOTES:**
-- This won't create the database for you, this has to be done manually before you can access it.
-- Check and edit the other files in the `config/` directory to customize your application as required.
+LICENSE
+-------------
+MIT. See [License](https://github.com/lmribeiro/todoslist/blob/master/LICENSE)

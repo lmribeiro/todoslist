@@ -37,14 +37,14 @@ class SiteController extends Controller
     public function actionIndex()
     {
         if (Yii::$app->user->isGuest) {
-            $users = User::find()->all();
-            $projects = Project::find()->all();
-            $tasks = Task::find()->where('finished=1')->all();
-            return $this->render('index', ['users' => count($users), 'projects' => count($projects), 'tasks' => count($tasks)]);
-        } else {
-            $projects = Project::find()->where('deleted=:deleted AND user_id=:user', array(':deleted' => 0, ':user' => Yii::$app->user->id))->all();
-            return $this->render('projects', ['projects' => $projects]);
+            $users = User::find()->count();
+            $projects = Project::find()->count();
+            $tasks = Task::find()->where('finished=1')->count();
+            return $this->render('index', ['users' => $users, 'projects' => $projects, 'tasks' => $tasks]);
         }
+        
+        $projects = Project::find()->where('deleted=:deleted AND user_id=:user', array(':deleted' => 0, ':user' => Yii::$app->user->id))->all();
+        return $this->render('projects', ['projects' => $projects]);
     }
 
 }

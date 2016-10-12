@@ -45,9 +45,8 @@ class ProjectController extends \yii\web\Controller
             return $this->renderPartial('create', [
                         'model' => $model,
             ]);
-        } else {
-            return "error";
         }
+        return "error";
     }
 
     public function actionDelete()
@@ -57,9 +56,8 @@ class ProjectController extends \yii\web\Controller
         $model = Project::findOne($request->post('id'));
         if ($model->delete()) {
             return "ok";
-        } else {
-            return "error";
         }
+        return "error";
     }
 
     public function actionUpdate()
@@ -70,9 +68,8 @@ class ProjectController extends \yii\web\Controller
         $model->name = $request->post('name');
         if ($model->save()) {
             return "ok";
-        } else {
-            return "error";
         }
+        return "error";
     }
 
 }

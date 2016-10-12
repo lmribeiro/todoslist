@@ -44,9 +44,8 @@ class TaskController extends \yii\web\Controller
             return $this->renderPartial('todo', [
                         'task' => $model,
             ]);
-        } else {
-            return var_dump($model->errors);
         }
+        return var_dump($model->errors);
     }
 
     public function actionDelete()
@@ -55,9 +54,8 @@ class TaskController extends \yii\web\Controller
         $model = Task::findOne($request->post('id'));
         if ($model->delete()) {
             return "ok";
-        } else {
-            return "error";
         }
+        return "error";
     }
 
     public function actionUpdate()
@@ -70,9 +68,8 @@ class TaskController extends \yii\web\Controller
             return $this->renderPartial('done', [
                         'task' => $model,
             ]);
-        } else {
-            return "error";
         }
+        return "error";
     }
 
 }

@@ -7,9 +7,7 @@ Todo Basic Project powered by [Yii 2](http://www.yiiframework.com/).
 DEMO
 ----
 
-You can check the demo at [todoslist.tk](http://www.todoslist.tk/), but please have the notion that it can be a little slow.
-- User: todo@list.com
-- Pass: todoslist
+The demo is no longer available.
 
 
 DIRECTORY STRUCTURE

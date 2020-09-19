@@ -1,5 +1,5 @@
 {
-    "name": "todoslist",
+    "name": "lmribeiro/todoslist",
     "description": "Todo Basic Project",
     "keywords": ["todo", "to-do"],
     "homepage": "http://www.yiiframework.com/",
@@ -13,7 +13,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": ">=2.0.5",
+        "yiisoft/yii2": ">=2.0.38",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*"
     },
